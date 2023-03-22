@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>속성 선택자</title>
+    <style>
+        input[type='text']{
+            border-width: 2px;
+            border-color: green;
+            background-color: whitesmoke;
+        }
+        input[type='password']{
+            border-width: 2px;
+            border-color: red;
+            background-color: salmon;
+        }
+        input[type='submit']{
+            font-weight: bolder;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="get">
+        <table>
+            <tr>
+                <td>아이디</td>
+                <td><input type="text" name="id" id=""></td>
+            </tr>
+            <tr>
+                <td>패스워드</td>
+                <td><input type="password" name="pass" id=""></td>
+            </tr>
+        </table>
+        <input type="submit" name="login" id="" value="로그인">
+    </form>
+
+</body>
+
+</html>
