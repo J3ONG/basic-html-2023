@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>익명함수/일반함수</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        // var fnc = function () { alert('fncA'); };
+        // var fnc = function () { alert('fncB'); };
+        // fnc(); -> B 실행
+
+        // var fnc =function(){alert('fncA');};
+        // function fnc(){
+        //     alert('fncB ');
+        // };
+        // fnc(); //A 실행 익명함수가 순위가 높다함
+        // function square(x  ){
+        //     return x*x;
+        // }
+        // function plus(x,y){
+        //     return x+ y;
+        // }
+        // alert(square(4));
+        // alert(plus(1,4));
+        function procTentimes(func){
+            for(var i = 0 ;i<3;i++){
+                func(); //매개변수로 가져온 함수를 실행
+            }
+        }
+
+        var callback = function () {
+            alert('호출');
+        }
+        procTentimes(callback);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
