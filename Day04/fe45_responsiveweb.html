@@ -1,53 +1,52 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>반응형 웹 뷰포트</title>
+    <title>반응형웹 뷰포트</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        #menu{
+        * { margin: 0; padding: 0;}
+
+        #menu {
             width: 260px;
             float: left;
         }
-        #section{
+
+        #section {
             width: 700px;
-            float: right;
+            float: left;
         }
-        li{
+
+        li {
             list-style: none;
         }
-        /* 스마트폰 */
-        @media screen and (max-width:450px) and (orientation: portrait) {
+
+        /* 스마트폰  */
+        @media screen and (max-width: 450px) and (orientation: portrait) {
             body {
                 background-color: aqua;
-                width: auto;
-            }
-            #menu {width: auto; float: none;}
-            #section{width: auto; float: none;}
+                width: auto;                
+            }               
+            #menu { width: auto; float: none; }         
+            #section { width: auto; float: none; }
         }
 
         /* 태블릿 */
-        @media screen and (min-width:450px) and (max-width:960px) and (orientation: portrait) {
+        @media screen and (min-width: 450px) and (max-width: 960px) and (orientation: portrait) {
             body {
                 background-color: burlywood;
                 width: auto;
             }
-            #menu {width: auto; float: none;}
-            #section{width: auto; float: none;}
+            #menu { width: auto; float: none; }         
+            #section { width: auto; float: none; }
         }
 
-        /* 데스크탑 */
-        @media screen and (min-width:960px) {
+        /* 테스트탑 */
+        @media screen and (min-width: 960px) and (orientation: portrait) {
             body {
-                width: 960px;
                 background-color: cadetblue;
-               
+                width: 960px;
                 margin: 0 auto;
                 overflow: hidden;
             }
@@ -57,23 +56,19 @@
             body {
                 background-color: gray;
             }
-
         }
-  
 
         @media print {
             h1 {
                 color: blue;
                 font-size: 60px;
             }
-
             body {
                 background-color: greenyellow;
             }
         }
     </style>
 </head>
-
 <body>
     <div id="menu">
         <ul>
@@ -84,14 +79,7 @@
     </div>
     <div id="section">
         <h1>Lorem ipsum dolor sit amet</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos error hic harum quasi iste eligendi
-            numquam
-            ab, ut asperiores saepe earum eos libero blanditiis? Incidunt perspiciatis omnis error maxime!
-            Accusamus.Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Dignissimos error hic harum quasi iste eligendi numquam
-            ab, ut asperiores saepe earum eos libero blanditiis? Incidunt perspiciatis omnis error maxime! Accusamus.
-        </p>
-    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, hic doloribus? Dicta aliquam quo ex at, eos amet tempora repudiandae. Praesentium enim et repellendus, maiores natus officia neque laudantium iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, hic doloribus? Dicta aliquam quo ex at, eos amet tempora repudiandae. Praesentium enim et repellendus, maiores natus officia neque laudantium iste!</p>
+    </div>    
 </body>
-
 </html>
