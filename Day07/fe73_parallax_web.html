@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Parallax Scrolling Web</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- 1. Bootstrap용 css CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/parallax.css'>
+    <link rel="icon" href="images/ui.ico">
+
+    <!-- jquery 추가 -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src='script/parallax.js'></script>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contract</a>
+        </nav>
+    </header>
+
+    <!-- Section 영역 -->
+    <section class="parallax">
+        <!--맨뒤-->
+        <img src="images/hill1.png" alt="" id="hill1">
+        <img src="images/hill2.png" alt="" id="hill2">
+        <img src="images/hill3.png" alt="" id="hill3">
+        <img src="images/hill4.png" alt="" id="hill4">
+        <img src="images/hill5.png" alt="" id="hill5">
+        <img src="images/tree.png" alt="" id="tree">
+        <h2 id="text">Parallax Website</h2>
+        <img src="images/leaf.png" alt="" id="leaf">
+        <img src="images/plant.png" alt="" id="plant">
+        <!--맨앞-->
+    </section>
+
+    <section class="contents">
+        <h2>Parallax Scrolling Web</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quas quae, cupiditate aperiam placeat
+            accusamus corporis dicta eveniet voluptas ipsa aliquam modi suscipit, delectus odio sapiente labore
+            similique, eos corrupti nulla consectetur! Impedit rerum facere vitae corrupti qui minus expedita
+            voluptatibus vero eligendi consectetur unde veritatis, officiis iusto sunt rem aspernatur delectus aperiam
+            in sit molestias inventore nobis. Aliquam eos accusamus modi autem, illum temporibus doloribus hic magni
+            dolorum doloremque aspernatur perferendis unde facilis eum in numquam ducimus error repudiandae nobis maxime
+            alias! Reprehenderit commodi magni pariatur eos veniam laboriosam suscipit tenetur voluptatibus incidunt,
+            nam quod debitis. Aliquid illo voluptatum rem rerum corporis, quidem qui quos praesentium soluta officiis
+            nemo repellendus minima odit dicta, itaque fugit esse nam deserunt nulla nisi excepturi tenetur, facilis
+            enim. Eius laboriosam quis magnam dolorum minima? Nihil eligendi nam sint eaque labore consectetur?
+            Quibusdam enim tempore maiores est odio nam, eveniet sapiente aut dolores recusandae molestias distinctio,
+            nesciunt alias, commodi quo dolorem! Ipsum voluptatem accusantium voluptatibus deleniti iste distinctio
+            commodi tenetur veniam cupiditate omnis, eligendi eos amet qui facilis asperiores itaque odio quod
+            consectetur a fugit ullam sapiente molestiae facere dignissimos. Ut illo ab labore temporibus aliquam
+            voluptas adipisci consectetur tempora consequatur veniam, tempore cum, quibusdam, fugiat vero optio quos!
+            Nobis impedit quasi minus velit voluptatibus eius accusamus et explicabo saepe deserunt! Dolores laborum
+            voluptatibus ad. Numquam, quasi expedita molestiae perspiciatis facilis exercitationem facere possimus ipsum
+            aliquam sed necessitatibus temporibus quod, doloribus vel suscipit soluta, voluptatem quibusdam atque illo
+            consequuntur beatae amet minus. Exercitationem ipsa perferendis dolore hic assumenda corporis consectetur
+            fuga eum placeat magnam, amet nam earum voluptates inventore enim maiores repellendus rem aliquid soluta
+            voluptas, fugiat quae sit distinctio! Est similique eos soluta deserunt tempore hic quidem, harum expedita
+            necessitatibus. Perferendis, totam repellendus, mollitia inventore, quisquam est labore praesentium a enim
+            quasi saepe! <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quasi vel repudiandae illo, ad eligendi
+            voluptate esse ex similique deleniti veritatis suscipit harum optio, veniam fugit dolorem deserunt minima
+            voluptatibus aspernatur. Ipsam, quod quidem explicabo doloremque reprehenderit animi recusandae expedita.
+            Alias atque minima dolor sit repudiandae delectus, enim, omnis veritatis perspiciatis cupiditate sunt. Sed
+            adipisci fugiat velit amet accusantium? In architecto omnis mollitia? A ut quo vitae quas nihil ratione ab
+            veniam neque soluta. Doloribus consequuntur rem, alias nemo qui quisquam, amet molestiae eaque labore vitae
+            neque voluptatem inventore nesciunt odit, quas obcaecati eveniet debitis id est cumque laudantium culpa.
+        </p>
+    </section>
+
+
+    <footer>
+        <nav>
+            <a href="#">Blog</a>
+            <span> | </span>
+            <a href="https://github.com/J3ONG" target="_blank">Github</a>
+        </nav>
+        <p>
+            <span>authro : Codehal </span> <span> | </span>
+            <span>editor : J3ONG </span> <span> | </span>
+            <span>email : kenohjw@gmil.com </span> <br>
+            <span>Copyright &copy; 2022. Codehal. All Rights Reserved</span>
+
+        </p>
+    </footer>
+
+    <!-- 2. Bootstrap용 js는 body에 위치해야 함! -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
