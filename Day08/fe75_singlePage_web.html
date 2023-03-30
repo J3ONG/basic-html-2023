@@ -53,7 +53,21 @@
                     }
                 })
             });
-            
+            $('#menu_about').click(function(){
+                $(this).addClass('active');
+                $('#menu_portfolio').removeClass('active');
+                $('#menu_signup').removeClass('active');
+            })
+            $('#menu_portfolio').click(function(){
+                $(this).addClass('active');
+                $('#menu_about').removeClass('active');
+                $('#menu_signup').removeClass('active');
+            })
+            $('#menu_signup').click(function(){
+                $(this).addClass('active');
+                $('#menu_portfolio').removeClass('active');
+                $('#menu_about').removeClass('active');
+            })
         })
     </script>
 
@@ -74,13 +88,13 @@
             <div id="navbarResponsive" class="navbar-collapse">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
+                        <a href="#about" class="nav-link" id="menu_about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                        <a href="#portfolio" class="nav-link" id="menu_portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
+                        <a href="#contact" class="nav-link" id="menu_signup">Contact</a>
                     </li>
                 </ul>
             </div>
