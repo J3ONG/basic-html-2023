@@ -21,12 +21,47 @@
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"></script>
 
     <script src='script/singlepage.js'></script>
+    <script>
+        $(document).ready(function () {
+            //스크롤 다운하면 메뉴바 색상 흰색으로 변경
+            var navbarShrink = () => {
+                const mainNav = $('#mainNav');
+                if (!mainNav) {
+                    return;
+                }
+                if (window.scrollY === 0) {
+                    // 스크롤 안내렸으면 remove
+                    mainNav.removeClass('navbar-shrink');
+                }
+                else {
+                    // 내렸으면 add
+                    mainNav.addClass('navbar-shrink');
+                }
+            }
+            navbarShrink();
+            $(document).scroll(function () {
+                navbarShrink();
+            });
+            const navbarToggler = $('.navbar-toggler');
+            const resNavItems = [].slice.call(
+                document.querySelectorAll('#navbarResponsive .nav-link')
+            );
+            resNavItems.map(function(resNavItem){
+                resNavItem.addEventListener('click', () => {
+                    if(window.getComputedStyle(navbarToggler).display !== 'none'){
+                        navbarToggler.click();
+                    }
+                })
+            });
+            
+        })
+    </script>
 
 </head>
 
 <body id="page-top">
     <!-- 네비게이션 영역 -->
-    <nav id="mainNav" class="navbar navbar-light navbar-expand fixed-top">
+    <nav id="mainNav" class="navbar navbar-light navbar-expand fixed-top ">
         <div class="container px-4">
             <a href="#page-top" class="navbar-brand"> Logo</a>
             <button type="button" class="navbar-toggler navbar-toggler-right" data-bs-toggle="collapse"
@@ -92,7 +127,8 @@
                 <div class="col-4">
                     <div class="featured-text text-center">
                         <h4>Shoreline</h4>
-                        <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even
+                        <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use
+                            it for any project - even
                             commercial projects! Ddownloat it, customize it, and publish your website!</p>
                     </div>
                 </div>
@@ -167,7 +203,7 @@
     <!-- Contact -->
     <section class="contact-section bg-black">
         <div class="container px-4">
-            <div class="row gx-4"> 
+            <div class="row gx-4">
                 <!-- 1st col -->
                 <div class="col-4 mb-3">
                     <div class="card py-4 h-100">
