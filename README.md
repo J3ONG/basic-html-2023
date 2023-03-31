@@ -9,6 +9,7 @@ Java 개발자 과정 프론트앤드 리포지토리
     - 프론트엔드 기본태그
 
 1일차 학습내용
+
 <!--![멀티미디어](https://raw.githubusercontent.com/J3ONG/basic-html-2023/main/image/day01.png)-->
 <img src="https://raw.githubusercontent.com/J3ONG/basic-html-2023/main/image/day01.png" width="300">
 
@@ -24,6 +25,7 @@ Java 개발자 과정 프론트앤드 리포지토리
     - HTML 레이아웃
     - 반응형 웹
 3일차 레이아웃 
+
 <img src="https://raw.githubusercontent.com/J3ONG/basic-html-2023/main/image/layout.png" width="600">
 
 ## 4일차
@@ -33,6 +35,7 @@ Java 개발자 과정 프론트앤드 리포지토리
     - Javascript 기초
 
 4일차 그리드 레이아웃 포토갤러리
+
 <img src="https://raw.githubusercontent.com/J3ONG/basic-html-2023/main/image/gallery01.png" width="600">
 
 ## 5일차
@@ -47,6 +50,7 @@ Java 개발자 과정 프론트앤드 리포지토리
     - 핀터레스트 스타일 웹페이지 클로닝
 
 6일차 Bootstrap 앨범 클로닝
+
     <img src="https://raw.githubusercontent.com/J3ONG/basic-html-2023/main/image/album_theme.png" width="600">
 
 
@@ -64,9 +68,11 @@ Java 개발자 과정 프론트앤드 리포지토리
 
 
 7일차 핀터레스트 스타일 클로닝
+
     <img src="https://raw.githubusercontent.com/J3ONG/basic-html-2023/main/image/portfolio1.png" width="600">
 
 Parallax Scrolling Web
+
     <img src="https://raw.githubusercontent.com/J3ONG/basic-html-2023/main/image/portfolio2.png" width="600">
 
 ## 8일차
@@ -75,11 +81,13 @@ Parallax Scrolling Web
     - SB Admin Page
 
 Grayscale Single Page Template
-    <img src="https://raw.githubusercontent.com/J3ONG/basic-html-2023/main/image/portfolio3.gif" width="600">
+
+<img src="https://raw.githubusercontent.com/J3ONG/basic-html-2023/main/image/portfolio3.gif" width="600">
 
 ## 9일차
 - 프론트엔드 학습
     - SB Admin Page
 
 SB Admin Page 중간단계
+
 <img src="https://raw.githubusercontent.com/J3ONG/basic-html-2023/main/image/portfolio4_middle.png" width="600">
