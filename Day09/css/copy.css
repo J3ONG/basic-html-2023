@@ -22,7 +22,6 @@ label {
     display: inline-block;
 }
 
-
 h1,
 h2,
 h3,
@@ -40,8 +39,7 @@ p {
     margin-bottom: 1.0rem;
 }
 
-.sb-nav-fixed #layoutLeftSide,
-.sb-topnav {
+.sb-nav-fixed #layoutLeftSide, .sb-topnav {
     position: fixed;
     top: 0;
     right: 0;
@@ -59,7 +57,7 @@ p {
     z-index: 1039;
 }
 
-.sb-nav-fixed #layoutTotal #layoutLeftSide .sb-sidenav {
+.sb-nav-fixed #layoutTotal #layoutLeftSide .sb-sidenav{
     padding-top: 56px;
 }
 
@@ -70,47 +68,36 @@ p {
 .sb-nav-fixed #layoutTotal #layoutContent {
     padding-left: 225px;
     top: 56px;
-
 }
 
-/* 전체 레이아웃 */
+/* 전체 레이아웃*/
 #layoutTotal {
     display: flex;
 }
 
-/* #layoutLeftSide{
-    position: fixed;
-    top: 56px;
-    left: 0;
-} */
-
 #layoutTotal #layoutLeftSide {
     flex-basis: 225px;
     flex-shrink: 0;
-    transition: transform 0.55s ease-in-out;
+    /* 사라졌다가 나오는 기능*/
+    transition: transform 0.15s ease-in-out;
     z-index: 1000;
-    /* transform: translateX(-225px); /* 화면 왼쪽으로 사라지게 */
-
+    /* transform: translateX(-225px); 화면 왼쪽으로 사라지게 하기 위함 */
 }
 
-
+/* 토글버튼 클릭시 왼쪽메뉴 숨기기!! */
 .sb-sidenav-toggled #layoutTotal #layoutLeftSide {
     transform: translateX(-225px);
-    /* 버튼 클릭시 왼쪽화면 사라짐*/
 }
 
 .sb-sidenav-toggled #layoutTotal #layoutContent {
     margin-left: -225px;
-    
-
 }
 
-.sb-sidenav-toggled #sidebarToggle {
-    transform: rotate(-180deg);
-    /* 메뉴 들어갈때 아이콘 180도 회전 */
+.sb-sidenav-toggled #sidebarToggle{
+    transform: rotate(-180deg); /* 메뉴가 들어갈때 아이콘이 180도 회전*/
 }
 
-/* .sb-sidenav-toggled #layoutTotal #layoutContent::before {
+/* .sb-sidenav-toggled #layoutTotal #layoutContent::before{
     content: "";
     display: block;
     position: absolute;
@@ -122,7 +109,12 @@ p {
     z-index: 1002;
     opacity: 0.5;
     transition: opacity 0.3s ease-in-out;
+} */
 
+/* #layoutLeftSide {
+    position: fixed;
+    top: 56px;
+    left: 0;
 } */
 
 #layoutTotal #layoutContent {
@@ -132,24 +124,18 @@ p {
     justify-content: space-between;
     min-width: 0;
     flex-grow: 1;
-    min-height: calc(100vh - 56px);
-    /*calc(100vh - 56px)*/
-    margin-left: -225;
-    transition: margin 0.55s ease-in-out;
+    min-height: calc(100vh-56px); /* calc(100vh-56px) */
+    /* margin-left: -225px; */
 }
 
+/*전체 레이아웃 끝*/
 
-
-
-/* 전체 레이아웃 끝 */
-
-/* 탑메뉴 */
+/* 탑 메뉴*/
 .sb-topnav {
     padding-left: 0;
     height: 56px;
-    z-index: 1001;
+    z-index: 1000;
 }
-
 
 .sb-topnav .navbar-brand {
     width: 225px;
@@ -164,11 +150,11 @@ p {
     color: #212529;
 }
 
+/* 왼쪽메뉴 */
 
-
-/* 왼쪽 메뉴 */
 .sb-sidenav {
     display: flex;
+    /* d-flex */
     flex-direction: column;
     height: 100vh;
     flex-wrap: nowrap;
@@ -176,7 +162,6 @@ p {
 
 .sb-sidenav .sb-sidenav-menu {
     flex-grow: 1;
-
 }
 
 .sb-sidenav .sb-sidenav-menu .nav {
@@ -188,13 +173,8 @@ p {
     padding: 1.75rem 1rem 0.75rem;
     font-size: 0.75rem;
     font-weight: bold;
-    text-transform: uppercase;
-
 }
 
-/* .nav-link{
-    transition: color 0.15s ease-in-out;
-} */
 .sb-sidenav .sb-sidenav-menu .nav .nav-link {
     display: flex;
     align-items: center;
@@ -228,7 +208,9 @@ p {
     flex-shrink: 0;
 }
 
-/* 왼쪽메뉴 디자인 */
+
+/* 왼쪽 메뉴 디자인 */
+
 .sb-sidenav-dark {
     background-color: #212529;
     color: rgba(255, 255, 255, 0.5);
@@ -236,13 +218,11 @@ p {
 
 .sb-sidenav-dark .sb-sidenav-menu .sb-sidenav-menu-heading {
     color: rgba(255, 255, 255, 0.25);
-
 }
 
 .sb-sidenav-dark .sb-sidenav-menu .nav-link {
     color: rgba(255, 255, 255, 0.5);
 }
-
 
 .sb-sidenav-dark .sb-sidenav-menu .nav-link:hover,
 .sb-sidenav-dark .sb-sidenav-menu .nav-link:active {
@@ -252,14 +232,15 @@ p {
 
 .sb-sidenav-dark .sb-sidenav-menu .sb-nav-link-icon {
     color: rgba(255, 255, 255, 0.25);
+    /* 각 메뉴의 아이콘은 글자보다 좀 어둡게 */
 }
-
 
 .sb-sidenav-dark .sb-sidenav-footer {
     background-color: #343a40;
 }
 
-/* simple-datatalbes 영역 */
+/* simple=datatables 영역 */
+
 .datatable-input,
 .datatable-selector {
     display: block;
@@ -268,6 +249,7 @@ p {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
+    /* text-transform: uppercase; */
     color: #212529;
     background-color: #f9f9f9;
     background-clip: padding-box;
@@ -291,13 +273,14 @@ p {
 
 .datatable-table {
     border-collapse: collapse;
-    --bs-table-color: #dee2e6;
+    --bs-table-color: var(--bs-body-color);
     --bs-table-bg: transparent;
-    --bs-table-border-color: #dee2e6;
-    border-color: #dee2e6;
+    --bs-table-border-color: #DEE2E6;
+    border-color: #DEE2E6;
+    border: solid 1px #dee2e6;
 }
 
-.datatable-pagination {
+.datatable-pagination ul{
     display: flex;
     padding-left: 0;
     list-style: none;
@@ -346,20 +329,4 @@ p {
 .datatable-pagination li:last-child a {
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-}
-
-/* 에러페이지 */
-#layoutError{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-#layoutError #layoutError_content{
-    min-width: 0;
-    flex-grow: 1;
-}
-
-#layoutError #layoutError_footer{
-    min-width: 0;
 }
